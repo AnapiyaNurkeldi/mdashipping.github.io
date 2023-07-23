@@ -1,0 +1,451 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap");
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+.container .languages {
+  cursor: pointer;
+}
+
+.active-color {
+  color: #3579F4;
+}
+
+.socials {
+  margin: 0 20px 0 40px;
+  cursor: pointer;
+}
+
+.nav-item {
+  margin-left: 10px;
+}
+
+.btn-open-modal {
+  display: none;
+}
+
+main .row {
+  margin-top: 80px;
+}
+main .row .Main-txt .text-color {
+  color: #3579F4;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 61px;
+}
+main .row .Main-txt .text-main {
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 61px;
+}
+main .row .main-sm-text {
+  margin-top: 30px;
+  max-width: 390px;
+}
+main .row .main-sm-text .text-small {
+  color: #18162D;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+main .row .button-contact {
+  margin-top: 50px;
+}
+main .row .button-contact .btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 20px 70px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+main .row .main-img img {
+  max-width: 700px;
+  height: auto;
+  float: right;
+}
+@media (max-width: 767px) {
+  main .row .Main-txt .text-color,
+  main .row .Main-txt .text-main {
+    font-size: 26px;
+    line-height: 1.25;
+  }
+}
+@media (max-width: 1000px) {
+  main .row .Main-txt {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  main .row .Main-txt .text-color,
+  main .row .Main-txt .text-main {
+    font-size: 26px;
+    line-height: 1.25;
+    margin-top: -40px;
+  }
+  main .row .main-sm-text {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  main .row .main-sm-text .text-small {
+    font-size: 14px;
+  }
+  main .row .custom-image-size {
+    max-width: 440px;
+    width: 400px;
+    float: none;
+  }
+  main .row .button-contact {
+    margin-top: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    text-align: center;
+  }
+  main .row .button-contact .btn {
+    padding: 20px 140px;
+    font-size: 13px;
+  }
+  main .row .video-container {
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+}
+
+.video-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 600px;
+  overflow: hidden;
+}
+.video-container iframe {
+  width: 1106px;
+  height: 460px;
+  border: solid 1px;
+  border-radius: 2rem;
+}
+
+.contact {
+  margin-top: 50px;
+  padding: 15px 0px;
+  background-color: #3579F4;
+  width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 50px 50px;
+}
+.contact .contact-us {
+  padding-top: 50px;
+  padding-left: 60px;
+}
+.contact .contact-us h3 {
+  color: #FFF;
+  font-family: Mulish;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.contact .contact-us p {
+  color: #FFFFFF;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  margin-bottom: 30px;
+}
+.contact .contact-us input.form-control {
+  border-color: transparent;
+  margin-bottom: 10px;
+  max-width: 400px;
+  height: 60px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  background: #5591FF !important;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.contact .contact-us input.form-control::-webkit-input-placeholder {
+  color: white;
+}
+.contact .contact-us input.form-control::-moz-placeholder {
+  color: white;
+}
+.contact .contact-us input.form-control:-ms-input-placeholder {
+  color: white;
+}
+.contact .contact-us input.form-control::-ms-input-placeholder {
+  color: white;
+}
+.contact .contact-us input.form-control::placeholder {
+  color: white;
+}
+.contact .contact-us input.msg {
+  height: 100px;
+  padding-bottom: 60px;
+}
+.contact .contact-us .button {
+  margin-top: 60px;
+  max-width: 400px;
+  height: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+.contact .contact-us .button button {
+  max-width: 400px;
+  width: 400px;
+  height: 60px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  padding-bottom: 40px;
+}
+.contact .contact-us .button button:hover {
+  background-color: #3579F4;
+  border: solid 1px #F0F0FA;
+}
+.contact .contact-img {
+  width: 760px;
+  height: 564px;
+  float: right;
+}
+.contact .contact-img img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.contact footer {
+  width: 100%;
+  height: 180px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 50px 50px 50px 50px;
+  background: #18162D;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+}
+.contact footer p {
+  color: #FFF;
+}
+
+.content {
+  margin-top: 50px;
+}
+.content .text {
+  margin-left: 60px;
+  margin-bottom: 30px;
+}
+.content .text h1 {
+  color: #3579F4;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.content .row {
+  margin-left: 10px;
+  padding: 15px 15px 15px 15px;
+}
+.content .row .sm {
+  border-radius: 20px;
+  background: #FFF;
+  -webkit-box-shadow: -4px 4px 16px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: -4px 4px 16px 0px rgba(0, 0, 0, 0.1);
+  width: 268px;
+  margin-left: 30px;
+  margin-bottom: 15px;
+  height: 250px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 15px 0px 15px 15px;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.content .row .sm h4 {
+  color: #18162D;
+  font-family: "Mulish";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.content .row .sm img {
+  width: 200px;
+  height: 220px;
+  float: right;
+  padding-bottom: 10px;
+  margin-top: -20px;
+}
+.content .row .sm:hover {
+  cursor: pointer;
+  background-color: #3579F4;
+}
+.content .row .sm:hover h4 {
+  color: white !important;
+}
+.content .row .big {
+  border-radius: 20px;
+  background: #FFF;
+  -webkit-box-shadow: -4px 4px 16px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: -4px 4px 16px 0px rgba(0, 0, 0, 0.1);
+  width: 540px;
+  margin-left: 30px;
+  margin-bottom: 15px;
+  height: 250px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 15px 15px 15px 15px;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.content .row .big h4 {
+  color: #18162D;
+  font-family: "Mulish";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.content .row .big img {
+  float: right;
+  width: 352px;
+  height: 248.442px;
+  padding-bottom: 10px;
+  margin-top: -40px;
+}
+.content .row .big:hover {
+  cursor: pointer;
+  background-color: #3579F4;
+}
+.content .row .big:hover h4 {
+  color: white !important;
+}
+.content .button {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.content .button button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 24px 60px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+  border-radius: 10px;
+  background: #F0F0FA;
+  color: #8C8C8C;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  border-color: transparent;
+}
+.content .button button:hover {
+  cursor: pointer;
+  background-color: #3579F4;
+  color: #FFF;
+}
+
+@media (max-width: 1000px) {
+  .container .navbar-nav,
+  .container .ml-auto {
+    display: none;
+  }
+}
+@media (max-width: 1000px) and (max-width: 1106px) {
+  .container .video-container {
+    max-height: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .video-container iframe {
+    width: 340px;
+    height: 200px;
+    border: solid 1px;
+    border-radius: 2rem;
+  }
+  .container footer {
+    margin-top: -220px;
+    padding-top: 20px;
+  }
+  .container footer p {
+    color: #FFF;
+  }
+  .container .contact {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .container .contact .contact-us {
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 20px;
+  }
+  .container .contact .contact-us .button button {
+    width: 300px;
+  }
+  .container .contact .contact-img {
+    width: 400px;
+  }
+  .container .btn-open-modal {
+    display: block;
+  }
+}
+@media (max-width: 1000px) {
+  .container .row .big {
+    width: 268px;
+  }
+  .container .row .big img {
+    width: 200px;
+    height: 200px;
+    margin-top: 5px;
+  }
+}
