@@ -9,31 +9,66 @@
 </head>
 <body>
     <div class="container">
+        <div class="fullscreen-menu hide" id="fullscreenMenu">
+            <svg id="closeModalBtn" class="close" xmlns="http://www.w3.org/2000/svg" width="17" height="29" viewBox="0 0 17 29" fill="none">
+                <path d="M14.5 27L2.21213 14.7121C2.09497 14.595 2.09497 14.405 2.21213 14.2879L14.5 2" stroke="#3579F4" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+            <div class="menu-content" >
+                <div class="ologo">
+                    <img src="./img/logow.svg" class="img-fluid" alt="">
+                </div>
+
+                <ul class="menu-items">
+                    <li><a href="./index.html" id="homee">HOME</a></li>
+                    <li><a href="#" id="servicess">SERVICES</a></li>
+                    <li><a href="#" id="contactt">CONTACT</a></li>
+                </ul>
+    
+               
+                <div class="social-media">
+                    <a href="#" class="social-icon"><img src="./img/telegram.png" alt="Telegram"></a>
+                    <a href="#" class="social-icon"><img src="./img/WhatsApp.png" alt="WhatsApp"></a>
+                    <a href="#" class="social-icon"><img src="./img/Youtube.png" alt="Youtube"></a>
+                    <a href="#" class="social-icon"><img src="./img/TikTok.png" alt="TikTok"></a>
+                 
+                </div>
+    
+                
+                <div class="language-switcher">
+                    <a href="#" class="language en active-color" onclick="changeLanguage('en')">EN</a>
+                    <span class="separator">/</span>
+                    <a href="#" class="language ru" onclick="changeLanguage('ru')">RU</a>
+                </div>
+            </div>
+        </div>
+
+
         <header>
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <div class="navbar-brand">
                         <img src="./img/logo.svg" alt="MDAP{}SHIPPING" class="logo img-fluid">
                     </div>
-                    <div class="btn-open-modal">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                    <div class="btn-open-modal" id="openModalBtn">
+                        <svg class="open" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
                             <circle cx="6.5" cy="6.5" r="5.5" stroke="#3579F4" stroke-width="2"/>
                             <circle cx="24.5" cy="6.5" r="5.5" stroke="#3579F4" stroke-width="2"/>
                             <circle cx="6.5" cy="24.5" r="5.5" stroke="#3579F4" stroke-width="2"/>
                             <circle cx="24.5" cy="24.5" r="5.5" stroke="#3579F4" stroke-width="2"/>
                         </svg>
+                       
                     </div>
-
+                
                     <div class="navbar-collapse justify-content-center" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item ">
-                                <a class="nav-link active-color active" aria-current="page" href="./index.html">HOME</a>
+                                <a class="nav-link active-color active" id="home" aria-current="page" href="./index.html">HOME</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link" aria-current="page">SERVICES</a>
+                                <a href="#" class="nav-link" id="services" aria-current="page">SERVICES</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link" aria-current="page">CONTACT</a>
+                                <a href="#" class="nav-link" id="contact" aria-current="page">CONTACT</a>
                             </li>
                         </ul>
                     </div>
@@ -58,7 +93,7 @@
 
                     <div class="languages_change ml-auto">
                         <div class="languages">
-                            <span class="ru ">RU</span> <span class="active-color">/</span> <span class="english active-color   ">EN</span>
+                            <span class="ru" onclick="changeLanguage('ru')">RU</span> <span class="active-color">/</span> <span class="english active-color" onclick="changeLanguage('en')">EN</span>
                         </div>
                     </div>
                 </div>
@@ -82,14 +117,19 @@
                     </div>
 
                     <div class="button-contact">
-                        <button class="btn btn-primary">
+                        <button class="btn btn-primary contact-us">
                             Contact us
                         </button>
                     </div>
 
+                    <div class="img-contact hide">
+                        <a href="#"><img class="img-fluid" width="50px" src="./img/contact-telegram.png" alt="Telegram"></a>
+                        <a href="#"><img class="img-fluid" width="50px" src="./img/contact-Whatsapp.png" alt="WhatsApp"></a>
+                    </div>
+
                 </div>
                 <div class="col-md-4">
-                    <!-- Larger and adaptive image -->
+                
                     <div class="main-img">
                         <img class="img-fluid custom-image-size" src="./img/main.png" alt="CAR">
                     </div>                 
@@ -104,53 +144,53 @@
 
         <div class="container content">
             <div class="text">
-                <h1>Services we do</h1>
+                <h1 class="wedo">Services we do</h1>
             </div>
             <div class="row">
               <div class="col-4 sm">
-                <h4>Buying<br>assistance</h4>
+                <h4 class="buy">Buying<br>assistance</h4>
                 <img src="./img/ye-car.png" class="img-fluid" alt="">
               </div>
               <div class="col-4 sm">
-                <h4>Auto transport</h4>
+                <h4 class="auto">Auto transport</h4>
                 <img src="./img/truck.png" style="margin-top: 10px;" class="img-fluid" alt="">
               </div>
               <div class="col-4 big">
-                <h4>Warehousing</h4>
+                <h4 class="ware">Warehousing</h4>
                 <img src="./img/lotcars.png" class="img-fluid" alt="">
               </div>
             </div>
             <div class="row">
               <div class="col-4 big">
-                <h4>Automobile loading</h4>
+                <h4 class="load">Automobile loading</h4>
                 <img src="./img/bmw.png" class="img-fluid" alt="">
               </div>
               <div class="col-4 sm">
-                <h4>Motorcycle <br>loading</h4>
+                <h4 class="motor">Motorcycle <br>loading</h4>
                 <img src="./img/moto.png" class="img-fluid" alt="">
               </div>
               <div class="col-4 sm">
-                <h4>Boat <br> loading</h4>
+                <h4 class="boat">Boat <br> loading</h4>
                 <img src="./img/Boats.png" class="img-fluid" alt="">
               </div>
             </div>
             <div class="row">
                 <div class="col-4 sm">
-                  <h4>Heavy<br>machinery<br>loading</h4>
+                  <h4 class="Heavy">Heavy<br>machinery<br>loading</h4>
                   <img src="./img/tank.png" style="margin-top: -50px;" class="img-fluid imgs" alt="">
                 </div>
                 <div class="col-4 sm">
-                  <h4>Dismantling</h4>
+                  <h4 class="Dis">Dismantling</h4>
                   <img style="margin-top: 0px;" src="./img/zap-removebg-preview.png" class="img-fluid imgs" alt="">
                 </div>
                 <div class="col-4 big">
-                  <h4>Parts <br> purchase <br> assistance</h4>
+                  <h4 class="Parts">Parts <br> purchase <br> assistance</h4>
                   <img  style="margin-top: -30px; width: 383px; height: 182px;" src="./img/parts.png" class="img-fluid imgs" alt="">
                 </div>
               </div>
 
               <div class="button">
-                <button class="btn btn-primary">MORE ABOUT SERVICES</button>
+                <button class="btn btn-primary more">MORE ABOUT SERVICES</button>
               </div>
           </div>
 
@@ -158,16 +198,14 @@
             <div class="row">
                 <div class="col-md-8">
                     <form class="contact-us">
-                        <h3>Contact us</h3>
-                        <p>Contact us if you need more information <br>
+                        <h3 class="txt-contact">Contact us</h3>
+                        <p class="txt-contact-p">Contact us if you need more information <br>
                          about our services</p>
-
                          <input type="text" class="form-control text-white" placeholder="Name">
                          <input type="text" class="form-control text-white" placeholder="Phone Number">
                          <input type="text" class="form-control text-white msg" placeholder="Message">
-
                          <div class="button">
-                            <button class="btn-primary">Send a Message</button>
+                            <button class="btn-primary send">Send a Message</button>
                          </div>
                     </form>
                 </div>
@@ -183,14 +221,16 @@
                     <img src="./img/logow.svg" alt="MDAP{}SHIPPING" class="img-fluid">
                 </div>
                 <div class="copyright">
-                    <p>Copyright © 2022 Cargo. All Rights reserved.</p>
+                    <p class="copy">Copyright © 2022 Cargo. All Rights reserved.</p>
                 </div>
                 
             </footer>
           </div>
 
-       
+          
     </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/lang.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.5.3/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
